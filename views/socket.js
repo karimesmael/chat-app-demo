@@ -23,6 +23,9 @@ socket.on("user-disconnect", (username) => {
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   const message = messageInput.value;
+  if (message === "") {
+    return;
+  }
   appendMessage(`You: ${message}`);
   socket.emit("send-message", message);
   messageInput.value = "";

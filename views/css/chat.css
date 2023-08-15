@@ -1,0 +1,45 @@
+body {
+  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    margin-top: 50px;
+    width: 60%;
+    max-width: 1000px;
+    height: 400px;
+    border: #CCC 2px solid;
+    box-sizing: content-box;
+    overflow-y:auto;
+    overflow-wrap: break-word;
+  } 
+  #message-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 2px;
+  }
+
+  #message-container div {
+    padding: 5px;
+  }
+
+  #message-container div:nth-child(2n) {
+    background-color: #FFF;
+  }
+
+  #send-container {
+    position: fixed;
+    padding-bottom: 30px;
+    bottom: 0;
+    background-color: white;
+    max-width: 1000px;
+    width: 60%;
+    display: flex;
+  }
+
+  #message-input {
+    flex-grow: 1;
+  }

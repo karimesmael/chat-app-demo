@@ -5,46 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat App</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script> 
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    #message-container {
-      width: 80%;
-      max-width: 1200px;
-      margin-top: 2px;
-    }
-
-    #message-container div {
-      padding: 5px;
-    }
-
-    #message-container div:nth-child(2n) {
-      background-color: #FFF;
-    }
-
-    #send-container {
-      position: fixed;
-      padding-bottom: 30px;
-      bottom: 0;
-      background-color: white;
-      max-width: 1200px;
-      width: 80%;
-      display: flex;
-    }
-
-    #message-input {
-      flex-grow: 1;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/chat.css">
 </head>
 <body>
+  <div class="container">
 
-  <div id="message-container"></div>
+    <div id="message-container"></div>
+
+  </div>
 
   <form id="send-container">
     
