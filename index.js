@@ -7,11 +7,11 @@ const server = app.listen(5000 || process.env.PORT);
 app.use(express.static("views"));
 
 const io = socket(server, {
-  //   cors: {
-  //     methods: ["GET", "POST"],
-  //     transports: ["websocket", "polling"],
-  //     // credentials: true,
-  //   },
+  cors: {
+    methods: ["GET", "POST"],
+    transports: ["websocket", "polling"],
+    credentials: true,
+  },
   allowEIO3: true,
 });
 
