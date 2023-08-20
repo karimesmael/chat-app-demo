@@ -5,6 +5,9 @@ const app = express();
 const server = app.listen(5000 || process.env.PORT);
 
 app.use(express.static("views"));
+app.use("/", (req, res, next) => {
+  res.redirect("index.html");
+});
 
 const io = socket(server, {
   cors: {
