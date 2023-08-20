@@ -1,12 +1,8 @@
 const express = require("express");
 var socket = require("socket.io");
 const app = express();
-const cors = require("cors");
 
-// app.set("view engine", "ejs");
-// app.set("views", "views");
-
-const server = app.listen(5000);
+const server = app.listen(5000 || process.env.PORT);
 
 app.use(express.static("views"));
 

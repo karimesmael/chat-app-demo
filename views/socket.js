@@ -4,13 +4,14 @@ const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
 const btn = document.getElementById("send-button");
 
-const username = prompt("what is your name ?");
+const username = "";
+// prompt("what is your name ?");
 appendMessage("you connected");
 
 socket.emit("new-user", username);
 
 socket.on("new-msg", (data) => {
-  appendMessage(`${data.username} : ${data.message}`);
+  appendMessage(`${data.username}: ${data.message}`);
 });
 socket.on("user-connected", (data) => {
   appendMessage(`${data} connected`);
