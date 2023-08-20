@@ -1,12 +1,12 @@
-let url = "https://chat-app-karimesmael.vercel.app/";
-var socket = io.connect(url);
+let url = process.env.NEXT_PUBLIC_SOCKET_URL;
 
+var socket = io.connect("https://chat-app-two-omega.vercel.app/" || url);
 const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
 const btn = document.getElementById("send-button");
 
-const username = "";
-prompt("what is your name ?");
+let username = prompt("what is your name ?");
+
 appendMessage("you connected");
 
 socket.emit("new-user", username);
