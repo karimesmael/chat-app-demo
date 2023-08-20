@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:5000");
+var socket = io.connect("http://localhost:5000" || process.env.PORT);
 
 const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
