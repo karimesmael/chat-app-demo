@@ -1,4 +1,4 @@
-let url = "https://chat-app-two-omega.vercel.app/";
+let url = process.env.NEXT_PUBLIC_SOCKET_URL;
 var socket = io.connect(url);
 const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
