@@ -1,5 +1,5 @@
 let url = process.env.NEXT_PUBLIC_SOCKET_URL;
-var socket = io.connect(url);
+var socket = io.connect("https://chat-app-two-omega.vercel.app/" || url);
 const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
 const btn = document.getElementById("send-button");
