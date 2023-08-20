@@ -2,12 +2,10 @@ const express = require("express");
 var socket = require("socket.io");
 const app = express();
 
-const server = app.listen(5000 || process.env.PORT);
+const server = app.listen(5000);
 
 app.use(express.static("views"));
-app.use("/", (req, res, next) => {
-  res.redirect("index.html");
-});
+
 
 const io = socket(server, {
   cors: {
