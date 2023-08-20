@@ -5,7 +5,7 @@ const messageInput = document.getElementById("message-input");
 const btn = document.getElementById("send-button");
 
 const username = "";
-// prompt("what is your name ?");
+ prompt("what is your name ?");
 appendMessage("you connected");
 
 socket.emit("new-user", username);
