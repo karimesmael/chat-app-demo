@@ -1,4 +1,4 @@
-let url = "https://chat-apnwwfq0n-karimesmael.vercel.app/";
+let url = "https://chat-app-karimesmael.vercel.app/";
 var socket = io.connect(url);
 
 const messageContainer = document.getElementById("message-container");
@@ -6,7 +6,7 @@ const messageInput = document.getElementById("message-input");
 const btn = document.getElementById("send-button");
 
 const username = "";
-// prompt("what is your name ?");
+prompt("what is your name ?");
 appendMessage("you connected");
 
 socket.emit("new-user", username);
