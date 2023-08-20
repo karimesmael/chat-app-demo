@@ -1,4 +1,4 @@
-let url = "https://chat-apnwwfq0n-karimesmael.vercel.app/";
+let url = "https://chat-app-two-omega.vercel.app/";
 var socket = io.connect(url);
 const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
