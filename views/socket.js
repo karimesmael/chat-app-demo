@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:5000" || process.env.PORT);
+var socket = io.connect("https://chat-apnwwfq0n-karimesmael.vercel.app/");
 
 const messageContainer = document.getElementById("message-container");
 const messageInput = document.getElementById("message-input");
